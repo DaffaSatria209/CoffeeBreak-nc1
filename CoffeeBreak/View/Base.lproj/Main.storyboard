@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fipps-Regular.otf">
+            <string>Fipps-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MainViewController.swift-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="MainViewController.swift" id="BYZ-38-t0r" customClass="MainViewController" customModule="CoffeeBreak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bgConcrete" translatesAutoresizingMaskIntoConstraints="NO" id="SMw-aV-vzx">
+                                <rect key="frame" x="0.0" y="453" width="390" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmn-pi-OaL">
+                                <rect key="frame" x="168" y="86" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CoffeeBreak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNM-9U-ET8">
+                                <rect key="frame" x="18" y="94" width="359" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tB-07-qzc">
+                                <rect key="frame" x="136" y="650" width="118" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="PlayBtn"/>
+                                <connections>
+                                    <action selector="PlayBtnOnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgk-PR-geE"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiX-J9-CJ1">
+                                <rect key="frame" x="55" y="720" width="280" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BuyCoffeeButton"/>
+                                <connections>
+                                    <action selector="BuyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acA-tX-IYS"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Vending" translatesAutoresizingMaskIntoConstraints="NO" id="5qC-RP-kEz">
+                                <rect key="frame" x="82" y="190" width="227" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="frame1" translatesAutoresizingMaskIntoConstraints="NO" id="IvQ-LD-Wq0">
+                                <rect key="frame" x="57" y="208" width="187" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PopUp_MenuCoffee" translatesAutoresizingMaskIntoConstraints="NO" id="smM-vQ-X8V">
+                                <rect key="frame" x="33" y="230" width="325" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlc-cf-QVx">
+                                <rect key="frame" x="82" y="285" width="201" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="14"/>
+                                <state key="normal" title="    Latte" image="VendBtn">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CoffeeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wMq-jI-sbJ"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="py3-EP-rSW">
+                                <rect key="frame" x="82" y="340" width="253" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="14"/>
+                                <state key="normal" title="    Coffee Cream" image="VendBtn">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CoffeeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ptq-dD-APn"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZz-pB-hvU">
+                                <rect key="frame" x="82" y="395" width="201" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="14"/>
+                                <state key="normal" title="    Black" image="VendBtn">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CoffeeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fe-o6-9fa"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u00-kz-tB8">
+                                <rect key="frame" x="0.0" y="66" width="390" height="712"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="23"/>
+                                <state key="normal" title="Tap to Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DrinkDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LjD-vd-SP1"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkn-DD-Ulu">
+                                <rect key="frame" x="0.0" y="55" width="390" height="712"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="23"/>
+                                <state key="normal" title="Tap to pay">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ContinuePayDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5j-ux-mq6"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kld-88-w2x">
+                                <rect key="frame" x="82" y="450" width="201" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="14"/>
+                                <state key="normal" title="    Flat White" image="VendBtn">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CoffeeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAR-dc-WmT"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="CoinPaymentAnimated_1" translatesAutoresizingMaskIntoConstraints="NO" id="y6G-A1-12o">
+                                <rect key="frame" x="33" y="230" width="325" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="CutsceneFrame" translatesAutoresizingMaskIntoConstraints="NO" id="g3L-Hg-4tb">
+                                <rect key="frame" x="-21" y="260" width="458" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ambil Minuman 2D_00000" translatesAutoresizingMaskIntoConstraints="NO" id="utw-VN-qKU">
+                                <rect key="frame" x="-13" y="276" width="416" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BlackCoffee_Can" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-kY-QrO">
+                                <rect key="frame" x="96" y="249" width="197" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngf-rD-Vbd">
+                                <rect key="frame" x="44" y="300" width="303" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Fipps-Regular" family="Fipps" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.35234344010000002" green="0.2712515593" blue="0.65793079139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="AdsAnimation" destination="IvQ-LD-Wq0" id="qTu-nn-8qa"/>
+                        <outlet property="BlackBtn" destination="mZz-pB-hvU" id="qVZ-AX-Qg5"/>
+                        <outlet property="BuyBtn" destination="NiX-J9-CJ1" id="Odo-cJ-kqj"/>
+                        <outlet property="ClaimDrink" destination="utw-VN-qKU" id="RJM-U0-vdk"/>
+                        <outlet property="CoffeeCan" destination="UTf-kY-QrO" id="fnE-Bs-Yxr"/>
+                        <outlet property="CoffeeCreamBtn" destination="py3-EP-rSW" id="skv-mu-s9D"/>
+                        <outlet property="CoinPaymentAnimated" destination="y6G-A1-12o" id="uFB-EB-wZP"/>
+                        <outlet property="ContinueDidTapBtn" destination="Kkn-DD-Ulu" id="GMX-SZ-yrj"/>
+                        <outlet property="ContinuePaymentDidTap" destination="Kkn-DD-Ulu" id="8Pd-9n-udY"/>
+                        <outlet property="CutsceneFrame" destination="g3L-Hg-4tb" id="45e-tQ-R7C"/>
+                        <outlet property="FlatWhiteBtn" destination="kld-88-w2x" id="13b-rm-5FG"/>
+                        <outlet property="LatteBtn" destination="Hlc-cf-QVx" id="LfN-cT-NbQ"/>
+                        <outlet property="Logo" destination="wNM-9U-ET8" id="X90-V0-KrJ"/>
+                        <outlet property="PlayBtn" destination="5tB-07-qzc" id="sbl-Cy-VTy"/>
+                        <outlet property="PopUp_Menu" destination="smM-vQ-X8V" id="wDd-QB-D2K"/>
+                        <outlet property="SupportiveWord" destination="ngf-rD-Vbd" id="Pwl-Uz-xi7"/>
+                        <outlet property="TapToDrinkBtn" destination="u00-kz-tB8" id="7cg-cK-xpU"/>
+                        <outlet property="Vending" destination="5qC-RP-kEz" id="Qw8-OT-64I"/>
+                        <outlet property="bar" destination="SMw-aV-vzx" id="y0L-U9-ZI8"/>
+                        <outlet property="buyBtn" destination="NiX-J9-CJ1" id="O3b-bB-BHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73.84615384615384" y="81.753554502369667"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ambil Minuman 2D_00000" width="416" height="262"/>
+        <image name="BlackCoffee_Can" width="220" height="369"/>
+        <image name="BuyCoffeeButton" width="280" height="67"/>
+        <image name="CoinPaymentAnimated_1" width="325" height="325"/>
+        <image name="CutsceneFrame" width="390" height="261"/>
+        <image name="PlayBtn" width="118" height="118"/>
+        <image name="PopUp_MenuCoffee" width="325" height="325"/>
+        <image name="VendBtn" width="55" height="33"/>
+        <image name="Vending" width="305" height="543"/>
+        <image name="bgConcrete" width="390" height="143"/>
+        <image name="frame1" width="180" height="329"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
